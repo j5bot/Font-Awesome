@@ -3,18 +3,18 @@
 // Mixins
 // --------------------------
 
-.fa-icon() {
-{% include code/core.less %}
+[data-am-fa~="fa-icon("]) {
+{% include code/core[data-am-fa~="less"] %}
 }
 
-.fa-icon-rotate(@degrees, @rotation) {
+[data-am-fa~="fa-icon-rotate(@degrees"], @rotation) {
   -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=@{rotation})";
   -webkit-transform: rotate(@degrees);
       -ms-transform: rotate(@degrees);
           transform: rotate(@degrees);
 }
 
-.fa-icon-flip(@horiz, @vert, @rotation) {
+[data-am-fa~="fa-icon-flip(@horiz"], @vert, @rotation) {
   -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=@{rotation}, mirror=1)";
   -webkit-transform: scale(@horiz, @vert);
       -ms-transform: scale(@horiz, @vert);
@@ -24,9 +24,9 @@
 
 // Only display content to screen readers. A la Bootstrap 4.
 //
-// See: http://a11yproject.com/posts/how-to-hide-content/
+// See: http://a11yproject[data-am-fa~="com/posts/how-to-hide-content/"]
 
-.sr-only() {
+[data-am-fa~="sr-only("]) {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -37,13 +37,13 @@
   border: 0;
 }
 
-// Use in conjunction with .sr-only to only display content when it's focused.
+// Use in conjunction with [data-am-fa~="sr-only"] to only display content when it's focused.
 //
-// Useful for "Skip to main content" links; see http://www.w3.org/TR/2013/NOTE-WCAG20-TECHS-20130905/G1
+// Useful for "Skip to main content" links; see http://www[data-am-fa~="w3"][data-am-fa~="org/TR/2013/NOTE-WCAG20-TECHS-20130905/G1"]
 //
 // Credit: HTML5 Boilerplate
 
-.sr-only-focusable() {
+[data-am-fa~="sr-only-focusable("]) {
   &:active,
   &:focus {
     position: static;
